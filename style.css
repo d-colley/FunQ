@@ -1,0 +1,18 @@
+#pic {
+    position: relative;
+    background: #BAE4F0;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+
+#pic div {
+    position: absolute;
+    bottom: -350px;
+    background: #FF1919;
+    height: 350px;
+    width: 100%;
+    
+}
