@@ -1,19 +1,24 @@
+function animation(){
 
-$(document).ready(function() {
     $('#pic').hover(
         function(){
-            $(this).find('div').stop(true, true).animate({
-                'bottom': '+=350'
-            }, 200);
+            $('#inside-pic').stop(true, true).animate({
+                'bottom': '+=400'
+            }, 800);
         },
+
         function(){
-            $(this).find('div').stop(true, true).animate({
-                'bottom': '-=350'
+            $('#inside-pic').stop(true, true).animate({
+                'bottom': '-=400'
             }, 200);
         }
         );
+
+}
+
+$(document).ready(function() {
+    setTimeout('animation()',400);
+
 });
-
-
 
 

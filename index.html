@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <!-- <html class="no-js"> --> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<!--iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="style.css">
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- js animation -->
+	<script src="animate.js"></script>
+	
+</head>
+<body>
+
+<div id="pic">
+<img id = "cover" src="./images/Page.jpg" align="middle" height="100%" width="100%">
+    <div id="inside-pic">
+        <div id="login">
+
+		<h2><span class="fontawesome-lock"></span>Sign In</h2>
+
+		<form action="javascript:void(0);" method="POST">
+
+			<fieldset>
+
+				<p><label for="email">Username</label></p>
+				<p><input type="email" id="email" value="firstname.lastname" onBlur="if(this.value=='')this.value='mail@address.com'" onFocus="if(this.value=='mail@address.com')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+				<p><label for="password">Password</label></p>
+				<p><input type="password" id="password" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+				<p><input type="submit" value="Sign In"></p>
+
+			</fieldset>
+
+		</form>
+
+	</div> <!-- end login -->
+    </div>
+</div>
+
+</body>
+</html>

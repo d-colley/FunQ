@@ -25,20 +25,26 @@
         <hr />
                 
         <h5>We&rsquo;ll just need a bit of information:</h5>
-        <form>
+        <form data-abide>
 				  <div class="row">
 				    <div class="large-12 columns">
-				      <label>First Name</label>
-				      <input type="text" placeholder="John" />
+				      <label>Username</label>
+				      <input type="text" placeholder="firstname.lastname" />
 				    </div>
 				  </div>
 
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Last Name</label>
-              <input type="text" placeholder="Doe" />
-            </div>
-          </div>
+          <div class="password-field">
+    <label>Password <small>required</small>
+      <input type="password" id="password" required pattern="[a-zA-Z]+">
+    </label>
+    <small class="error">Your password must match the requirements</small>
+  </div>
+  <div class="password-confirmation-field">
+    <label>Confirm Password <small>required</small>
+      <input type="password" required pattern="[a-zA-Z]+" data-equalto="password">
+    </label>
+    <small class="error">The password did not match</small>
+  </div>
 				  <div class="row">
 				    <div class="large-4 medium-4 columns">
 				      <label>Age</label>
@@ -68,7 +74,7 @@
 				  </div>
 				  
 				</form>
-        <a class="radius button" href="#">Submit</a>
+        <button type="submit">Submit</button>
       </div>     
 
       
