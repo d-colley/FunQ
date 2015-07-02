@@ -6,36 +6,16 @@
 	<title>Foundation | Welcome</title>
 	<link rel="stylesheet" href="css/foundation.css" />
 	<script src="js/vendor/modernizr.js"></script>
-	 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Area', 'Percent'],
-          ['Verbal',     8],
-          ['Mathematical',  13],
-          ['Visualization', 5],
-          ['Classification',    10],
-          ['Logic',    5],
-          ['Patterns',    5]
-        ]);
+	<link rel="stylesheet" href="http://cdn.datatables.net/plug-ins/1.10.7/integration/foundation/dataTables.foundation.css">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
-        var options = {
-          title: '',
-          is3D: true,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
-        chart.draw(data, options);
-      }
-    </script>
 </head>
 <body>
 	
 	<div class="row">
 		<div class="large-12 columns">
-			<h1>Fun Q</h1>
+			<h1 id="header_tch" class="left">Ms. Tainya Walker</h1>
+			<h4 id="header_sch" class="right">School: AllmanTown Primary</h4>
 		</div>
 	</div>
 
@@ -43,69 +23,128 @@
 
 	<div class="row">
 		<div class="large-12 columns">
-			<h2>John Doe's Report</h2>
+			<h2 class="left">John Doe's Report</h2>
+
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="large-12 columns">
 			<ul class="tabs" data-tab>
-				<li class="tab-title active"><a href="#panel1">Overview</a></li>
-				<li class="tab-title"><a href="#panel2">Verbal</a></li>
-				<li class="tab-title"><a href="#panel3">Mathematical</a></li>
-				
-				<li class="tab-title"><a href="#panel4">Visualization</a></li>
-				<li class="tab-title"><a href="#panel5">Classification</a></li>
-				<li class="tab-title"><a href="#panel6">Logic</a></li>
-				<li class="tab-title"><a href="#panel7">Patterns</a></li>
+				<li class="tab-title active"><a href="#panel1">Class</a></li>
+				<li class="tab-title"><a href="#panel2">School</a></li>
+				<li class="tab-title"><a href="#panel3">Region</a></li>
 			</ul>
 			<div class="tabs-content">
 				<div class="content active" id="panel1">
+				<h4>Class: 4B</h4>
+					<table id="example" class="display" cellspacing="0" width="100%">
+						<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Test Result</th>
+							</tr>
+						</thead>
 
-				<div class="right"id="piechart_3d" style="width: 600px; height: 500px;"></div>
+						<tfoot>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Test Result</th>
+							</tr>
+						</tfoot>
 
-					<p>First Name: John
-						<br />
-						Last Name: Doe
-						<br />
-						Age: 300
-						<br />
-						Birthdate: 1993-10-01
-						<br />
-						Gender: M
-						</p>
+						<tbody>
+							<tr>
+								<td>Tiger Nixon</td>
 
+								<td>Edinburgh</td>
+								<td>61</td>
 
+							</tr>
+							<tr>
+								<td>Garrett Winters</td>
 
-					<h3 class="subheader">Verbal</h3>
-					<div class="progress large-5">
-						<span class="meter" style="width: 50% "></span>
-					</div>
+								<td>Tokyo</td>
+								<td>63</td>
 
-					<h3 class="subheader">Mathematical</h3>
-					<div class="radius progress large-5">
-						<span class="meter" style="width: 80%"></span>
-					</div>
+							</tr>
+							<tr>
+								<td>Ashton Cox</td>
 
-					<h3 class="subheader">Visualization</h3>
-					<div class="radius progress  large-5">
-						<span class="meter" style="width: 30%"></span>
-					</div>
+								<td>San Francisco</td>
+								<td>66</td>
 
-					<h3 class="subheader">Classification</h3>
-					<div class="radius progress large-5">
-						<span class="meter" style="width: 60%"></span>
-					</div>
+							</tr>
+							<tr>
+								<td>Cedric Kelly</td>
 
-					<h3 class="subheader">Logic</h3>
-					<div class="radius progress large-5">
-						<span class="meter" style="width: 30%"></span>
-					</div>
+								<td>Edinburgh</td>
+								<td>22</td>
 
-					<h3 class="subheader">Patterns</h3>
-					<div class="radius progress large-5">
-						<span class="meter" style="width: 30%"></span>
-					</div>
+							</tr>
+							<tr>
+								<td>Airi Satou</td>
+
+								<td>Tokyo</td>
+								<td>33</td>
+
+							</tr>
+							<tr>
+								<td>Brielle Williamson</td>
+
+								<td>New York</td>
+								<td>61</td>
+
+							</tr>
+							<tr>
+								<td>Herrod Chandler</td>
+
+								<td>San Francisco</td>
+								<td>59</td>
+
+							</tr>
+							<tr>
+								<td>Rhona Davidson</td>
+
+								<td>Tokyo</td>
+								<td>55</td>
+
+							</tr>
+							<tr>
+								<td>Colleen Hurst</td>
+
+								<td>San Francisco</td>
+								<td>39</td>
+
+							</tr>
+							<tr>
+								<td>Sonya Frost</td>
+
+								<td>Edinburgh</td>
+								<td>23</td>
+
+							</tr>
+							<tr>
+								<td>Jena Gaines</td>
+
+								<td>London</td>
+								<td>30</td>
+
+							</tr>
+							<tr>
+								<td>Quinn Flynn</td>
+
+								<td>Edinburgh</td>
+								<td>22</td>
+
+							</tr>
+
+						</tbody>
+					</table>
+
+					
 
 					<!-- <h3 class="subheader">Patterns</h3>
 					<div class="nice round progress alert large-6">
@@ -143,9 +182,13 @@
 	
 	
 	<script src="js/vendor/jquery.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script>
-		$(document).foundation();
-	</script>
-</body>
-</html>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#example').dataTable();
+		} );</script>
+		<script src="js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+	</body>
+	</html>

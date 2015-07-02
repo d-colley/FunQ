@@ -6322,3 +6322,43 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+
+
+#verb_bar
+{
+  background-color: #3366cc;
+}
+
+#math_bar
+{
+  background-color: #dc3912;
+}
+
+#visual_bar
+{
+  background-color: #ff9900;
+}
+
+#class_bar
+{
+  background-color: #109618;
+}
+
+#logic_bar
+{
+  background-color: #990099;
+}
+
+#patt_bar
+{
+  background-color: #0099c6;
+}
+
+#header_sch
+{
+  margin-top: 3%;
+}
+#info_sch
+{
+  margin-top: -8%;
+}
