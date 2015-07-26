@@ -6362,3 +6362,8 @@ th.hide-for-touch {
 {
   margin-top: -8%;
 }
+
+#test_content
+{
+  min-height: 300px;
+}
