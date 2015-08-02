@@ -5068,16 +5068,16 @@ ul.off-canvas-list {
   left: -9999px;
   list-style: none;
   margin-left: 0;
-  position: absolute;
-  background: #FFFFFF;
-  border: solid 1px #cccccc;
+  /*position: absolute;*/
+  /*background: #FFFFFF;*/
+  /*border: solid 1px #cccccc;*/
   font-size: 0.875rem;
   height: auto;
   max-height: none;
   width: 100%;
   z-index: 89;
   margin-top: 2px;
-  max-width: 200px; }
+  max-width: 371px; }
   .f-dropdown.open {
     display: block; }
   .f-dropdown > *:first-child {
@@ -5087,7 +5087,7 @@ ul.off-canvas-list {
   .f-dropdown:before {
     border: inset 6px;
     content: "";
-    display: block;
+    display: none;
     height: 0;
     width: 0;
     border-color: transparent transparent #FFFFFF transparent;
@@ -5099,7 +5099,7 @@ ul.off-canvas-list {
   .f-dropdown:after {
     border: inset 7px;
     content: "";
-    display: block;
+    display: none;
     height: 0;
     width: 0;
     border-color: transparent transparent #cccccc transparent;
